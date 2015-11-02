@@ -1,0 +1,29 @@
+{
+  "name": "web",
+  "homepage": "https://github.com/JoseBahamonde/web",
+  "authors": [
+    "Jose Bahamonde <jbahamondecordeiro@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "web",
+    "polymer",
+    "cv"
+  ],
+  "license": "GNU",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0"
+  }
+}
