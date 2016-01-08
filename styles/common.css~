@@ -1,0 +1,29 @@
+.subtitle {
+	font-style: italic;
+	font-size: 10px;	
+}
+
+.slide {
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+	min-width: 100%;
+	padding-top: 50px;
+}
+
+footer {
+	margin-top: 50px;
+}
+
+p {
+	font-size: 14pt;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.flag {
+	width: 50px;
+	height: 50px;
+}
