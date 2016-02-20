@@ -1,6 +1,31 @@
+body {
+	background-image: url('../images/background.png');
+}
+
+a {
+	color: #18AB8E;
+}
+
+a:hover {
+	color: #16A287;
+}
+
+.all-content {
+	background-color: white;
+	border-radius: 5px;
+}
+
 .subtitle {
+	font-size: 1.5em;	
+}
+
+.mail {
 	font-style: italic;
-	font-size: 10px;	
+	font-size: 1em;	
+}
+
+.mail, .subtitle {
+	margin: 0;
 }
 
 .slide {
@@ -12,7 +37,7 @@
 }
 
 footer {
-	margin-top: 50px;
+	margin-top: 15px;
 }
 
 p {
@@ -26,4 +51,29 @@ a:hover {
 .flag {
 	width: 50px;
 	height: 50px;
+	border: 2px solid black;
+}
+
+.page-nav {
+	font-size: 2em;
+	margin: 25px 0;
+}
+
+.page-nav li a {
+	color: black;
+	border-radius: 5px;
+	padding: 0px 15px;
+}
+
+.page-nav li a:hover {
+	 color: black;
+	 background-color: white;
+}
+
+.basic-info{
+	padding-bottom: 15px;
+}
+
+.back-to-top {
+	position: absolute;;
 }
