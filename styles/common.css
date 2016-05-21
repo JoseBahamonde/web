@@ -8,6 +8,57 @@ html {
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+body {
+	text-align: center;
+	color: black;
+}
+
+#avatar {
+	border: 5px solid;
+}
+#main {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  
+}
+
+.subtitle {
+	font-size: 1.5em;	
+	font-weight: bold;
+}
+
+.mail {
+	font-style: italic;
+	font-size: 1em;	
+}
+
+.social-icon :HOVER
+.social-icon-background {
+	color: black;
+}
+
+.social-icon-foreground {
+	color: white;
+}
+
+.social-icon-facebook {
+	color: #3b5998;
+}
+
+.social-icon-twitter {
+	color: rgb(29, 161, 242);
+}
+
+.social-icon-tumblr {
+	color: #36465d;
+}
+
+.social-icon-google {
+	color: #d73d32;
+}
 /*
 body {
 	background-image: url('../images/background.png');
@@ -24,19 +75,6 @@ a:hover {
 .all-content {
 	background-color: white;
 	border-radius: 5px;
-}
-
-.subtitle {
-	font-size: 1.5em;	
-}
-
-.mail {
-	font-style: italic;
-	font-size: 1em;	
-}
-
-.mail, .subtitle {
-	margin: 0;
 }
 
 .slide {
