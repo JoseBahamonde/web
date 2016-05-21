@@ -1,6 +1,2 @@
-# web
-Prototipo para landing-page.
-TODO: 
-* Icono back-to-top.
-* Menu responsive.
-* Enlaces currículum.
+# Páxina persoal
+A miña páxina persoal. Desplegado en http://www.josebahamonde.com
