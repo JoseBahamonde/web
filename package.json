@@ -1,0 +1,24 @@
+{
+  "name": "josebahamonde-web",
+  "version": "3.0.0-SNAPSHOT",
+  "description": "Personal web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseBahamonde/landing-page.git"
+  },
+  "author": "Jose Bahamonde Cordeiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseBahamonde/landing-page/issues"
+  },
+  "homepage": "https://github.com/JoseBahamonde/landing-page#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "gulp": "^3.9.1",
+    "jquery": "^3.1.0"
+  }
+}
