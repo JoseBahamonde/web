@@ -72,6 +72,10 @@ header {
 	color: #d73d32;
 }
 
+section {
+	padding: 100px 0;
+}
+
 .main-footer {
 	width: 100%;
 }
