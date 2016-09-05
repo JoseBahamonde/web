@@ -8,75 +8,133 @@
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	
-	<link rel="stylesheet" type="text/css"
-		href="ext/bootstrap-3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet"
-		href="ext/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/common.css">
 	
 	<!-- 		<script type="text/javascript" charset="utf-8" src="ext/jquery-2.2.0/jquery-2.2.0.min.js"></script> -->
 	<!-- 		<script type="text/javascript" charset="utf-8" src="scripts/jquery-utils.js"></script> -->
 </head>
 
-<body>
-	<div id="main">
-		<div class="slide">
-			<header class="container-fluid">
-				<div class="basic-info">
-					<img id="avatar" src="images/profile.jpg"
-						class="img-responsive img-circle center-block" width="150px"
-						height="150px">
-					<h1 class="text-center">Jose Bahamonde Cordeiro</h1>
-					<h2 class="text-center subtitle">Programador</h2>
+<body id="page-top">
+	<nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Jose Bahamonde</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">Sobre mín</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header>
+    	<div class="header-content">
+			<div class="basic-info">
+				<img id="avatar" src="images/profile.jpg"
+					class="img-responsive img-circle center-block" width="150px"
+					height="150px">
+				<h1 class="text-center">Jose Bahamonde Cordeiro</h1>
+				<h2 class="text-center subtitle">Programador</h2>
+			</div>
+			<div>
+				<ul class="list-inline text-center social-list">
+					<li><a class="social-icon"
+						href="mailto:jbahamondecordeiro@gmail.com"
+						title="O meu enderezo de correo electrónico" target="_blank">
+							<span class="fa-stack fa-lg social-icon-mail"> <i
+								class="fa fa-circle fa-stack-2x social-icon-background"></i> <i
+								class="fa fa-envelope fa-stack-1x social-icon-foreground"></i>
+						</span>
+					</a></li>
+					<li><a class="social-icon"
+						href="http://www.facebook.com/josebc99"
+						title="O meu perfil de facebook" target="_blank"> <span
+							class="fa-stack fa-lg social-icon-facebook"> <i
+								class="fa fa-circle fa-stack-2x social-icon-background"></i> <i
+								class="fa fa-facebook fa-stack-1x social-icon-foreground"></i>
+						</span>
+					</a></li>
+					<li><a class="social-icon"
+						href="http://www.twitter.com/lampabroas"
+						title="O meu perfil de twitter" target="_blank"> <span
+							class="fa-stack fa-lg social-icon social-icon-twitter"> <i
+								class="fa fa-circle fa-stack-2x social-icon-background"></i> <i
+								class="fa fa-twitter fa-stack-1x fa-lg social-icon-foreground"></i>
+						</span>
+					</a></li>
+					<li><a class="social-icon"
+						href="http://www.fraseoloxiaavanzada.tumblr.com"
+						title="Un blog no que anoto frases que escoito por ah&iacute;"
+						target="_blank"> <span
+							class="fa-stack fa-lg social-icon-tumblr"> <i
+								class="fa fa-circle fa-stack-2x social-icon-background"></i> <i
+								class="fa fa-tumblr fa-stack-1x social-icon-foreground"></i>
+						</span>
+					</a></li>
+					<li><a class="social-icon"
+						href="http://plus.google.com/104562411904366125498"
+						title="O meu perfil de google+" target="_blank"> <span
+							class="fa-stack fa-lg social-icon-google"> <i
+								class="fa fa-circle fa-stack-2x social-icon-background"></i> <i
+								class="fa fa-google-plus fa-stack-1x social-icon-foreground"></i>
+						</span>
+					</a></li>
+				</ul>
+			</div>
+    	</div>
+	</header>    	
+	
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-title">
+						Sobre min
+					</h2>
 				</div>
-				<div>
-					<ul class="list-inline text-center social-list">
-						<li><a class="social-icon"
-							href="mailto:jbahamondecordeiro@gmail.com"
-							title="O meu enderezo de correo electrónico" target="_blank">
-								<span class="fa-stack fa-lg social-icon-mail"> <i
-									class="fa fa-circle fa-stack-2x social-icon-background"></i> <i
-									class="fa fa-envelope fa-stack-1x social-icon-foreground"></i>
-							</span>
-						</a></li>
-						<li><a class="social-icon"
-							href="http://www.facebook.com/josebc99"
-							title="O meu perfil de facebook" target="_blank"> <span
-								class="fa-stack fa-lg social-icon-facebook"> <i
-									class="fa fa-circle fa-stack-2x social-icon-background"></i> <i
-									class="fa fa-facebook fa-stack-1x social-icon-foreground"></i>
-							</span>
-						</a></li>
-						<li><a class="social-icon"
-							href="http://www.twitter.com/lampabroas"
-							title="O meu perfil de twitter" target="_blank"> <span
-								class="fa-stack fa-lg social-icon social-icon-twitter"> <i
-									class="fa fa-circle fa-stack-2x social-icon-background"></i> <i
-									class="fa fa-twitter fa-stack-1x fa-lg social-icon-foreground"></i>
-							</span>
-						</a></li>
-						<li><a class="social-icon"
-							href="http://www.fraseoloxiaavanzada.tumblr.com"
-							title="Un blog no que anoto frases que escoito por ah&iacute;"
-							target="_blank"> <span
-								class="fa-stack fa-lg social-icon-tumblr"> <i
-									class="fa fa-circle fa-stack-2x social-icon-background"></i> <i
-									class="fa fa-tumblr fa-stack-1x social-icon-foreground"></i>
-							</span>
-						</a></li>
-						<li><a class="social-icon"
-							href="http://plus.google.com/104562411904366125498"
-							title="O meu perfil de google+" target="_blank"> <span
-								class="fa-stack fa-lg social-icon-google"> <i
-									class="fa fa-circle fa-stack-2x social-icon-background"></i> <i
-									class="fa fa-google-plus fa-stack-1x social-icon-foreground"></i>
-							</span>
-						</a></li>
-					</ul>
-				</div>
-			</header>
+			</div>
 		</div>
-	</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="text-center">
+					<i class="fa fa-4x fa-google-plus"></i>
+					<h3 class="about-item-heading"></h3>
+				</div>
+				
+				<div class="text-center">
+				
+				</div>
+				
+				<div class="text-center">
+				
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="portfolio">
+	
+	</section>
+	
+	<section id="contacto">
+	
+	</section>
 	
 	<footer class="main-footer">
 		<p class="text-center">Feito con <i class="fa fa-heart"></i> por Jose Bahamonde Cordeiro</p>
