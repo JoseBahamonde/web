@@ -57,6 +57,7 @@ header {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 100%;
+	padding-top: 100px;
 }
 
 .subtitle {
@@ -97,6 +98,14 @@ section {
 	margin: 20px auto;
 }
 
-.main-footer {
-	width: 100%;
+.github-project p {
+	text-align: justify;
+}
+
+.more-arrow {
+	margin-top: 20px;
+}
+
+.more-arrow:HOVER {
+	font-weight: bold;
 }
