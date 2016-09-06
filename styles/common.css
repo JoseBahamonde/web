@@ -30,6 +30,23 @@ header {
 	border-bottom-width: 2px;
 }
 
+#main-nav.affix {
+	background-color: white;
+	border-bottom-color: ligth-grey;
+	border-bottom-width: white;
+}
+
+.navbar-default.affix-top .navbar-header .navbar-brand, 
+.navbar-default.affix-top .navbar-nav > li > a {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-default.affix-top .navbar-header .navbar-brand:HOVER,
+.navbar-default.affix-top .navbar-nav > li > a:HOVER {
+    color: gray;
+}
+
 #avatar {
 	border: 5px solid;
 }
@@ -74,6 +91,10 @@ header {
 
 section {
 	padding: 100px 0;
+}
+
+.about-item {
+	margin: 20px auto;
 }
 
 .main-footer {

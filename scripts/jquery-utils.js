@@ -25,33 +25,28 @@ function smoothScroll() {
       }
     });
 }
-
-
-/**
- *	Implements back to top functionality over elements with class .back-to-top
- */
-function backToTop() {
-	$(window).scroll(function() {
-		var header = $("basic-info");
-		var headerPosition = header.height && header.offset() ? header.height() + header.offset().top : window.innerHeight; 
-      if (jQuery(this).scrollTop() > headerPosition) {
-          jQuery('.back-to-top').fadeIn(fadeDuration);
-      } else {
-          jQuery('.back-to-top').fadeOut(fadeDuration);
-      }
-    });
-    
-    $('.back-to-top').click(function(event) {
-        event.preventDefault();
-        $('html, body').animate({scrollTop: 0}, scrollDuration);
-        return false;
-    });
- }
  
  /**
  *	Regist event handlers when the document is loaded
  */
 $(document).ready(function() {
-    backToTop();
 	$(smoothScroll);
+	
+	 // Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 51
+    });
+    
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
+
+    // Offset for Main Navigation
+    $('#main-nav').affix({
+        offset: {
+            top: 100
+        }
+    })
 });
