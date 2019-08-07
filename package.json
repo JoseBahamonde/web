@@ -1,21 +1,21 @@
 {
   "name": "josebahamonde-web",
-  "version": "3.0.0",
-  "description": "Personal web",
+  "version": "4.0.0",
+  "description": "Web personal",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JoseBahamonde/landing-page.git"
+    "url": "https://github.com/JoseBahamonde/web.git"
   },
   "author": "Jose Bahamonde Cordeiro",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/JoseBahamonde/landing-page/issues"
+    "url": "https://github.com/JoseBahamonde/web/issues"
   },
-  "homepage": "https://github.com/JoseBahamonde/landing-page#readme",
+  "homepage": "https://github.com/JoseBahamonde/web",
   "devDependencies": {
     "bootstrap": "^3.3.7",
     "del": "^2.2.2",
