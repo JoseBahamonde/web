@@ -1,87 +1,26 @@
-a {
-	font-weight: bold;
-}
-
-a:hover {
-	text-decoration: none;
-	color: #36465d;
-}
-
 body, html {
 	width: 100%;
 	height: 100%;
 }
 
 body {
+    font-family: 'hackregular', monospace;
 	text-align: center;
 	margin: 0;
 	color: #333;
-}
-
-header {
-	background-image: url('../images/background.jpg');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	min-height: 100%;
 	position: relative;
 	width: 100%;
+    background: url('../images/background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header {
 	text-align: center;
-}
-
-#main-nav {
-	background-color: white;
-	border-bottom-color: rgba(0, 0, 0, 0.3);
-	border-bottom-width: 2px;
-}
-
-@media (min-width: 768px) {
-	#main-nav {
-		background-color: transparent;
-	}
-	
-	.navbar-default.affix-top .navbar-header .navbar-brand, 
-	.navbar-default.affix-top .navbar-nav > li > a {
-	    color: white;
-	}
-}
-
-#main-nav.affix {
-	background-color: white;
-	border-bottom-color: ligth-grey;
-}
-
-.navbar-default .navbar-header .navbar-brand {
-	color: #36465d;
-}
-
-.navbar-default .navbar-toggle:focus, 
-.navbar-default .navbar-toggle {
-	background-color: white;	
-}
-
-.navbar-default .navbar-header .navbar-brand, 
-.navbar-default .navbar-nav > li > a {
-    font-size: 1.2em;
-}
-
-.navbar-default .navbar-collapse .navbar-nav > li > a:HOVER,
-.navbar-default.affix .navbar-header .navbar-brand:HOVER,
-.navbar-default.affix .navbar-nav > li > a:HOVER,
-.navbar-default.affix-top .navbar-header .navbar-brand:HOVER,
-.navbar-default.affix-top .navbar-nav > li > a:HOVER {
-    color: #3b5998;
-}
-
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:FOCUS,
-.navbar-default .navbar-nav > .active > a:HOVER {
-	color: #36465d;
-	background-color: white;
 }
 
 #avatar {
@@ -92,7 +31,7 @@ header {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -70%);
 	width: 100%;
 	padding-top: 100px;
 	color: white;
@@ -132,33 +71,24 @@ header {
 	color: #d73d32;
 }
 
-section {
-	padding: 100px 0;
+.social-icon-telegram {
+	color: #32afed;
 }
 
-.about-item {
-	margin: 20px auto;
+.social-icon-linkedin {
+	color: #283e4a;
 }
 
-.github-project p {
-	text-align: justify;
+.social-icon-instagram {
+	color: #cd486b;
 }
 
-.more-arrow, .more-arrow:ACTIVE {
-	color: white;
-}
-
-.more-arrow:HOVER {
-	font-weight: bold;
-	color: #36465d;
+.social-icon-flickr {
+    color: #151517;
 }
 
 .basic-info h1 {
 	font-weight: bold;
-}
-
-.about-item i {
-	color: #36465d;
 }
 
 .btn-xl,
@@ -176,26 +106,3 @@ section {
 	border: none;
 }
 
-.inverse-section {
-	background-color: #36465d;
-	color: white;
-}
-
-.inverse-section a {
-	color: #6d7c94;
-}
-
-.inverse-section a:HOVER {
-	color: #97a8c1;
-}
-
-.inverse-section .contact-item,
-.inverse-section .contact-item a {
-	color: white;
-}
-
-.page-footer,
-.page-footer p {
-	min-height: 50px;
-	line-height: 50px;
-}

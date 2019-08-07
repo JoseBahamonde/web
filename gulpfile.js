@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
-var uglify = require('gulp-uglify');
 var zip = require('gulp-zip');
 var del = require('del');
 var pkg = require('./package.json');
@@ -27,44 +26,28 @@ gulp.task('minify-css', function() {
         .pipe(gulp.dest('dist/page/styles'))
 });
 
-gulp.task('minify-js', function() {
-    return gulp.src('src/scripts/*.js')
-        .pipe(uglify())
-        .pipe(header(banner, { pkg: pkg }))
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('dist/page/scripts'))
-});
-
 gulp.task('copy', function() {
 	gulp.src(
-			[ 'node_modules/bootstrap/dist/**/*', '!**/npm.js',
-					'!**/bootstrap-theme.*', '!**/*.map' ]).pipe(
-			gulp.dest('dist/page/vendor/bootstrap'));
+            [ 'node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map' ])
+            .pipe(gulp.dest('dist/page/vendor/bootstrap'));
 
 	gulp.src(
-			[ 'node_modules/jquery/dist/jquery.js',
-					'node_modules/jquery/dist/jquery.min.js' ]).pipe(
-			gulp.dest('dist/page/vendor/jquery'));
-
-	gulp.src([ 'node_modules/scrollreveal/dist/*.js' ]).pipe(
-			gulp.dest('dist/page/vendor/scrollreveal'));
-
-	gulp.src(
-			[ 'node_modules/font-awesome/**',
-					'!node_modules/font-awesome/**/*.map',
-					'!node_modules/font-awesome/.npmignore',
-					'!node_modules/font-awesome/*.txt',
-					'!node_modules/font-awesome/*.md',
-					'!node_modules/font-awesome/*.json' ]).pipe(
-			gulp.dest('dist/page/vendor/font-awesome'));
+			[ 'node_modules/@fortawesome/fontawesome-free/**',
+					'!node_modules/@fortawesome/fontawesome-free/**/*.map',
+					'!node_modules/@fortawesome/fontawesome-free/.npmignore',
+					'!node_modules/@fortawesome/fontawesome-free/*.txt',
+					'!node_modules/@fortawesome/fontawesome-free/*.md',
+                    '!node_modules/@fortawesome/fontawesome-free/*.json' ])
+            .pipe(gulp.dest('dist/page/vendor/font-awesome'));
 })
 
-gulp.task('default', [ 'minify-css', 'minify-js', 'copy' ]);
+gulp.task('default', [ 'minify-css', 'copy' ]);
 
 gulp.task('copy-dist', ['default'], function() {
 	gulp.src([ 'src/images/**' ]).pipe(gulp.dest('dist/page/images'));
+    gulp.src([ 'src/fonts/**' ]).pipe(gulp.dest('dist/page/fonts'));
 	gulp.src([ 'src/index.html' ]).pipe(gulp.dest('dist/page'));
-	gulp.src([ 'src/favicon.ico' ]).pipe(gulp.dest('dist/page'));
+    gulp.src([ 'src/favicon.ico' ]).pipe(gulp.dest('dist/page'));
 });
 
 gulp.task('package', ['copy-dist'], function() {

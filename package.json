@@ -1,6 +1,6 @@
 {
   "name": "josebahamonde-web",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "Web personal",
   "main": "index.html",
   "scripts": {
@@ -17,17 +17,16 @@
   },
   "homepage": "https://github.com/JoseBahamonde/web",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.1",
     "bootstrap": "^3.3.7",
     "del": "^2.2.2",
-    "font-awesome": "^4.6.3",
+    "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^2.0.12",
     "gulp-header": "^1.8.8",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.0.0",
-    "gulp-zip": "^3.2.0",
-    "jquery": "^3.1.0",
-    "scrollreveal": "^3.3.1"
+    "gulp-zip": "^3.2.0"
   }
 }
