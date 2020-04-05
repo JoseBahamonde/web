@@ -11,12 +11,27 @@ body {
 	min-height: 100%;
 	position: relative;
 	width: 100%;
-    background: url('../images/background.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     overflow: hidden;
+}
+
+@media (max-width:1025px) { 
+	body {
+		background: url('../images/background_tablets.jpg') no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
+@media (min-width:1026px) { 
+	body {
+		background: url('../images/background.jpg') no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
 }
 
 header {
