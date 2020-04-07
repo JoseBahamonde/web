@@ -71,12 +71,21 @@ body {
 		background-size: cover;
 	}
 
-	.header-content {
-		padding-top: 450px;
+	@media only screen and (orientation: landscape) {
+		.header-content {
+			padding-top: 400px;
+		}
 	}
 
+	@media only screen and (orientation: portrait) {
+		.header-content {
+			padding-top: 500px;
+		}
+	}
+	
+
 	.strip {
-		padding-bottom: 30px;
+		padding-bottom: 15px;
 	}
 
 	.basic-info {
@@ -115,7 +124,7 @@ body {
 	}
 
 	.strip {
-		padding-bottom: 30px;
+		padding-bottom: 15px;
 	}
 
 	.basic-info {
@@ -154,7 +163,7 @@ body {
 	}
 
 	.strip {
-		padding-bottom: 30px;
+		padding-bottom: 15px;
 	}
 
 	.basic-info {
