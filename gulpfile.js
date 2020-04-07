@@ -44,6 +44,7 @@ gulp.task('copy-dist', ['default'], function() {
     gulp.src([ 'src/fonts/**' ]).pipe(gulp.dest('dist/page/fonts'));
 	gulp.src([ 'src/index.html' ]).pipe(gulp.dest('dist/page'));
     gulp.src([ 'src/favicon.ico' ]).pipe(gulp.dest('dist/page'));
+    gulp.src([ 'src/favicon*.png' ]).pipe(gulp.dest('dist/page'));
 });
 
 gulp.task('package', ['copy-dist'], function() {
