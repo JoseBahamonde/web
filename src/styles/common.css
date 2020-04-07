@@ -24,20 +24,32 @@ body {
 	}
 
 	.header-content {
-		padding-top: 650px;
+		padding-top: 550px;
 	}
 
 	.strip {
-		padding-bottom: 0;
+		padding-bottom: 15px;
 	}
 
 	.basic-info h1 {
-		font-size: 1.7em;
+		font-size: 1.4em;
 	}
 
 	.subtitle {
-		font-size: 1.2em;
+		font-size: 1em;
 	}
+
+	.social-list {
+		margin-bottom: 0;
+	}
+
+	.social-list li {
+		margin-bottom: 0;
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
 }
 
 @media only screen and (min-width: 480px) {
@@ -50,7 +62,7 @@ body {
 	}
 
 	.header-content {
-		padding-top: 500px;
+		padding-top: 600px;
 	}
 
 	.basic-info h1 {
@@ -59,6 +71,11 @@ body {
 
 	.subtitle {
 		font-size: 1.5em;
+	}
+
+	.social-list li {
+		padding-right: 5px;
+		padding-left: 5px;
 	}
 }
 
@@ -72,7 +89,7 @@ body {
 	}
 
 	.header-content {
-		padding-top: 220px;
+		padding-top: 350px;
 	}
 
 	.basic-info h1 {
@@ -81,6 +98,11 @@ body {
 
 	.subtitle {
 		font-size: 1.5em;
+	}
+
+	.social-list li {
+		padding-right: 5px;
+		padding-left: 5px;
 	}
 } 
 
@@ -94,7 +116,7 @@ body {
 	}
 
 	.header-content {
-		padding-top: 100px;
+		padding-top: 350px;
 	}
 
 	.basic-info h1 {
@@ -103,6 +125,11 @@ body {
 
 	.subtitle {
 		font-size: 1.5em;
+	}
+
+	.social-list li {
+		padding-right: 5px;
+		padding-left: 5px;
 	}
 }
 
@@ -126,8 +153,21 @@ header {
 }
 
 .subtitle {
-	font-size: 1.5em;
+	margin: 0;
 	font-weight: bold;
+	padding-top: 10px;
+}
+
+.social-list {
+	padding-left: 0;
+	list-style: none;
+	margin-left: -5px;
+	margin-top: 0;
+	text-align: center;
+}
+
+.social-list li {
+	display: inline-block;
 }
 
 .social-icon :HOVER
@@ -174,10 +214,12 @@ header {
 .basic-info {
 	padding: 15px;
 	color: #333;
+	text-align: center;
 }
 
 .basic-info h1 {
 	font-weight: bold;
+	margin: 0;
 }
 
 .btn-xl,
@@ -194,4 +236,3 @@ header {
 	color: white;
 	border: none;
 }
-
