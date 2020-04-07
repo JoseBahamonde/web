@@ -52,6 +52,14 @@ body {
 	.header-content {
 		padding-top: 500px;
 	}
+
+	.basic-info h1 {
+		font-size: 36px;
+	}
+
+	.subtitle {
+		font-size: 1.5em;
+	}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -66,6 +74,14 @@ body {
 	.header-content {
 		padding-top: 220px;
 	}
+
+	.basic-info h1 {
+		font-size: 36px;
+	}
+
+	.subtitle {
+		font-size: 1.5em;
+	}
 } 
 
 @media only screen and (min-width : 1824px) {
@@ -79,6 +95,14 @@ body {
 
 	.header-content {
 		padding-top: 100px;
+	}
+
+	.basic-info h1 {
+		font-size: 36px;
+	}
+
+	.subtitle {
+		font-size: 1.5em;
 	}
 }
 
