@@ -8,7 +8,7 @@ var pkg = require('./package.json');
 
 var banner = ['/*!\n',
     ' * Jose Bahamonde - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-    ' * Copyright 2016-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
+    ' * Copyright ' + (new Date()).getFullYear(), ' - <%= pkg.author %>\n',
     ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
     ' */\n',
     ''
@@ -27,10 +27,6 @@ gulp.task('minify-css', function() {
 });
 
 gulp.task('copy', function() {
-	gulp.src(
-            [ 'node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map' ])
-            .pipe(gulp.dest('dist/page/vendor/bootstrap'));
-
 	gulp.src(
 			[ 'node_modules/@fortawesome/fontawesome-free/**',
 					'!node_modules/@fortawesome/fontawesome-free/**/*.map',
