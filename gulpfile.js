@@ -14,39 +14,44 @@ var banner = ['/*!\n',
     ''
 ].join('');
 
-gulp.task('clean', function() {
-	del([ 'dist/**' ]);
-});
+gulp.task('clean', gulp.series((cb) => {
+        del(['dist/**']);
+        cb();
+    }));
 
-gulp.task('minify-css', function() {
-    return gulp.src('src/styles/*.css')
+gulp.task('minify-css', gulp.series(() => gulp.src('src/styles/*.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(header(banner, { pkg: pkg }))
-        .pipe(gulp.dest('dist/page/styles'))
-});
+        .pipe(gulp.dest('dist/page/styles'))));
 
-gulp.task('copy', function() {
-	gulp.src(
-			[ 'node_modules/@fortawesome/fontawesome-free/**',
-					'!node_modules/@fortawesome/fontawesome-free/**/*.map',
-					'!node_modules/@fortawesome/fontawesome-free/.npmignore',
-					'!node_modules/@fortawesome/fontawesome-free/*.txt',
-					'!node_modules/@fortawesome/fontawesome-free/*.md',
-                    '!node_modules/@fortawesome/fontawesome-free/*.json' ])
-            .pipe(gulp.dest('dist/page/vendor/font-awesome'));
-})
+gulp.task('copy', gulp.series((cb) => {
+    gulp.src(
+        ['node_modules/@fortawesome/fontawesome-free/**',
+            '!node_modules/@fortawesome/fontawesome-free/**/*.map',
+            '!node_modules/@fortawesome/fontawesome-free/.npmignore',
+            '!node_modules/@fortawesome/fontawesome-free/*.txt',
+            '!node_modules/@fortawesome/fontawesome-free/*.md',
+            '!node_modules/@fortawesome/fontawesome-free/*.json'])
+        .pipe(gulp.dest('dist/page/vendor/font-awesome'));
+        cb();
+}));
 
-gulp.task('default', [ 'minify-css', 'copy' ]);
+gulp.task('default', gulp.series('minify-css', 'copy'));
 
-gulp.task('copy-dist', ['default'], function() {
-	gulp.src([ 'src/images/**' ]).pipe(gulp.dest('dist/page/images'));
-    gulp.src([ 'src/fonts/**' ]).pipe(gulp.dest('dist/page/fonts'));
-	gulp.src([ 'src/index.html' ]).pipe(gulp.dest('dist/page'));
-    gulp.src([ 'src/favicon.ico' ]).pipe(gulp.dest('dist/page'));
-    gulp.src([ 'src/favicon*.png' ]).pipe(gulp.dest('dist/page'));
-});
+gulp.task('copy-dist', gulp.series('default', (cb) => {
+        gulp.src(['src/images/**']).pipe(gulp.dest('dist/page/images'));
+        gulp.src(['src/fonts/**']).pipe(gulp.dest('dist/page/fonts'));
+        gulp.src(['src/index.html']).pipe(gulp.dest('dist/page'));
+        gulp.src(['src/favicon.ico']).pipe(gulp.dest('dist/page'));
+        gulp.src(['src/favicon*.png']).pipe(gulp.dest('dist/page'));
+        cb();
+    }));
 
-gulp.task('package', ['copy-dist'], function() {
-	gulp.src(['./dist/page/**']).pipe(zip('page.zip')).pipe(gulp.dest('dist'));
-});
+gulp.task('package', gulp.series('copy-dist', (cb) => {
+        gulp
+            .src(['./dist/page/**'])
+            .pipe(zip('page.zip'))
+            .pipe(gulp.dest('dist'));
+        cb();
+    }));
