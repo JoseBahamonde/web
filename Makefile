@@ -2,7 +2,7 @@
 deps:
 	npm install
 
-build:
+build: clean
 	npm run build
 
 package:
