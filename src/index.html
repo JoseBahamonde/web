@@ -1,85 +1,205 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
-        <title>Jose Bahamonde Cordeiro</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE = edge">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        
-        <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
-        <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-        <link rel="stylesheet" type="text/css" href="styles/common.css">
-    </head>
+<html lang="es">
 
-    <body>
-        
-        <header>
-            <div class="basic-info-phone">
-                <h1>Jose Bahamonde Cordeiro</h1>
-                <h2 class="subtitle">Programador</h2>
-            </div>
-            <div class="header-content">
-                <div class="strip">
-                    <div class="basic-info">
-                        <h1>Jose Bahamonde Cordeiro</h1>
-                        <h2 class="subtitle">Programador</h2>
-                    </div>
-                    <ul class="social-list">
-                        <li>
-                            <a class="social-icon" href="mailto:jose@bahamonde.dev" title="O meu enderezo de correo electrónico" target="_blank">
-                                <span class="fa-stack fa-lg social-icon-mail">
-                                    <i class="fa fa-circle fa-stack-2x social-icon-background"></i>
-                                    <i class="fa fa-envelope fa-stack-1x social-icon-foreground"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social-icon" href="http://www.twitter.com/lampabroas" title="O meu perfil de twitter" target="_blank"> 
-                                <span class="fa-stack fa-lg social-icon social-icon-twitter">
-                                    <i class="fa fa-circle fa-stack-2x social-icon-background"></i> 
-                                    <i class="fab fa-twitter fa-stack-1x fa-lg social-icon-foreground"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social-icon" href="https://telegram.me/JoseBahamonde" title="Conta de telegram" target="_blank"> 
-                                <span class="fa-stack fa-lg social-icon-telegram">
-                                    <i class="fa fa-circle fa-stack-2x social-icon-background"></i> 
-                                    <i class="fab fa-telegram-plane fa-stack-1x social-icon-foreground"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social-icon" href="https://www.linkedin.com/in/bahamondev/" title="O meu perfil de LinkedIn" target="_blank"> 
-                                <span class="fa-stack fa-lg social-icon-linkedin">
-                                    <i class="fa fa-circle fa-stack-2x social-icon-background"></i>
-                                    <i class="fab fa-linkedin-in fa-stack-1x social-icon-foreground"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social-icon" href="http://www.github.com/bahamondev" title="O meu perfil de github" target="_blank"> 
-                                <span class="fa-stack fa-lg social-icon-github">
-                                    <i class="fa fa-circle fa-stack-2x social-icon-background"></i> 
-                                    <i class="fab fa-github fa-stack-1x social-icon-foreground"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="social-icon" href="mailto:jbahamondecordeiro@gmail.com" title="Correo de google" target="_blank"> 
-                                <span class="fa-stack fa-lg social-icon-google">
-                                    <i class="fa fa-circle fa-stack-2x social-icon-background"></i> 
-                                    <i class="fab fa-google fa-stack-1x social-icon-foreground"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧑🏻‍💻 bahamondev</title>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑🏻‍💻</text></svg>">
+    <style>
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 0;
+            background-color: #F4F4E6;
+        }
 
+        .container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 5vw 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2vw;
+        }
+
+        .profile-photo-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 156px;
+            height: 156px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: linear-gradient(to bottom right, #333, #0077b5, #e4405f, #333);
+            padding: 3px;
+            margin-bottom: 20px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .title {
+            font-size: 3.125em;
+        }
+
+        .title p {
+            margin: 0.5em 0;
+        }
+
+        .social-buttons {
+            margin-top: 10px;
+        }
+
+        .social-buttons a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px 20px;
+            border: 3px solid;
+            border-radius: 25px;
+            text-decoration: none;
+            color: black;
+            font-size: 1em;
+        }
+
+        .social-buttons a img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+
+        .social-buttons a span {
+            margin-left: 5px;
+        }
+
+        @media only screen and (max-width: 600px) { 
+            .social-buttons a span { 
+                display: none; 
+            } 
+        }
+
+        .social-buttons a:hover {
+            background-color: #FAFAFA;
+        }
+
+        .social-buttons a.github {
+            border-color: #333;
+        }
+
+        .social-buttons a.linkedin {
+            border-color: #0077b5;
+        }
+
+        .social-buttons a.instagram {
+            border-color: #e4405f;
+        }
+
+        .social-buttons a.email {
+            border-color: #333;
+        }
+
+        .code-description {
+            align-self: center;
+            flex-grow: 1;
+        }
+
+        .code-description pre {
+            margin: 0;
+            padding: 15px;
+            font-family: 'Consolas', monospace;
+            font-size: 16px;
+            line-height: 1.8;
+            white-space: pre;
+            background-color: #FAFAFA;
+            border-radius: 15px;
+        }
+
+        @media only screen and (min-width: 600px) { 
+            .code-description pre { 
+                min-width: 600px;
+            } 
+        }
+
+        .footer {
+            font-family: consolas, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile-photo-wrapper">
+            <div class="profile-photo">
+                <img src="https://www.gravatar.com/avatar/8e0d9a2a90a2e3636123df0edf275ea7?s=150"
+                    alt="Foto de Jose Bahamonde Cordeiro">
+            </div>
+        </div>
+        <div class="social-buttons">
+            <a href="https://github.com/bahamondev" target="_blank" class="github">
+                <img src="assets/github.svg" alt="GitHub">
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/bahamondev" target="_blank" class="linkedin">
+                <img src="assets/linkedin.svg" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/escacha.noces" target="_blank" class="instagram">
+                <img src="assets/instagram.svg" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+            <a href="mailto:jose@bahamonde.dev" class="email">
+                <img src="assets/mail.svg" alt="Email">
+                <span>Email</span>
+            </a>
+        </div>
+        <div class="code-description">
+            <pre class="prettyprint">
+class SoftwareDeveloper {
+    name: "Jose Bahamonde Cordeiro",
+    display: "boy",
+    creationDate: "17-11-1991",
+    host: "Cabanas (A Baña)",
+    language: {
+        comm: [
+            "Galician", 
+            "Spanish", 
+            "English"
+        ],
+        code: ["Java", "SQL"],
+        next: ["Rust"]
+    },
+    expertise: {
+        area: "System automation",
+        at: "Oesía Networks",
+        start: 2014
+    }
+    hobbies: [
+        "Programming", 
+        "Soccer", 
+        "Photography"
+    ],
+    contact: {
+        email: jose@bahamonde.dev,
+        linkedin: bahamondev
+    }
+}</pre>
+        </div>
+        <div class="footer">
+            Made with &#10084; by bahamondev
+        </div>
+    </div>
+</body>
 </html>

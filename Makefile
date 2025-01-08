@@ -1,12 +1,8 @@
-
-deps:
-	npm install
+package:
+	npm run package
 
 build: clean
 	npm run build
 
-package:
-	npm run package
-
-clean:
+clean: 
 	npm run clean
