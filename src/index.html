@@ -23,7 +23,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 2vw;
+            gap: 3vw;
         }
 
         .profile-photo-wrapper {
@@ -36,7 +36,6 @@
             overflow: hidden;
             background: linear-gradient(to bottom right, #333, #0077b5, #e4405f, #333);
             padding: 3px;
-            margin-bottom: 20px;
         }
 
         .profile-photo {
@@ -130,6 +129,12 @@
         @media only screen and (min-width: 600px) { 
             .code-description pre { 
                 min-width: 600px;
+            } 
+        }
+
+        @media only screen and (max-width: 360px) { 
+            .code-description pre { 
+                font-size: 14px;
             } 
         }
 
